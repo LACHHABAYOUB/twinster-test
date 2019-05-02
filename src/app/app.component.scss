@@ -1,0 +1,125 @@
+
+.page{
+  background-color: white;
+
+  .center {
+  background-color:#AAAAAA  ;
+  color: azure;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 100px;
+  right: 500px;
+  padding: 100px;
+  margin: auto;
+  }
+
+  .img{
+    background-image: url("../assets/logo.png")  ;
+    background-repeat: no-repeat;
+     width: 340px;
+     height: 100px;
+     position: absolute;
+     right: 68px;
+     top: 25px;
+  }
+
+  .text{
+    position: absolute;
+    top: 180px;
+    font-size: 25px;
+
+  }
+    .btn-primary{
+      background-color: #646460;
+      position: absolute;
+      top: 190px;
+      right: 110px;
+      font-size: 20px;
+    }
+}
+  
+
+
+.img-body{
+   background-image: url("../assets/body.JPG")  ;
+  background-repeat: no-repeat;
+  height:290px;
+  width: 150px;
+
+}
+
+.img-age{
+  background-image: url("../assets/age.JPG")  ;
+  background-repeat: no-repeat;
+  height:220px;
+  width: 210px;
+  position: relative;
+  bottom: 65px;
+}
+.img-weight{
+  background-image: url("../assets/weight.JPG")  ;
+  background-repeat: no-repeat;
+  height:270px;
+  width: 210px;
+  position: absolute;
+  bottom: 65px;
+  left: 355px;
+}
+.result{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  height: 640px;
+  width: 500px;
+  .text-result{
+    font-size: 100px;
+    position: absolute;
+    right: 100px;
+  }
+}
+
+.allsize1{
+  background-image: url("../assets/0.png")  ;
+  background-repeat: no-repeat;
+  height:550px;
+  width: 720px;
+  position: relative;
+ 
+}
+.allsize2{
+  background-image: url("../assets/2.png")  ;
+  left: 285px;
+  background-repeat: no-repeat;
+  height: 580px;
+  width: 720px;
+  position: absolute;
+  top: 17px;
+ 
+}
+
+.allsize3{
+  background-image: url("../assets/3.png")  ;
+  left: 550px;
+  background-repeat: no-repeat;
+  height: 580px;
+  width: 720px;
+  position: absolute;
+  top: 17px;
+ 
+}
+
+.btn-men{
+position: absolute;
+right: 140px;
+background-color: green;
+color: rgb(214, 210, 210);
+
+}
+.btn-women{
+  position: absolute;
+  right: 30px;
+  background-color: palevioletred;
+color: white;
+
+  }

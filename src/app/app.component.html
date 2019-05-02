@@ -1,0 +1,112 @@
+<ng-template #contenttt let-modal>
+    <div class="modal-header">
+    </div>
+    <div class="modal-body">
+      <div class="result">
+          <Div class="text-result">{{size}}</Div>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a type="button" class="btn-primary" href="http://localhost:4200/">Close</a>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')" style="position: absolute;right: 700px;">Back</button>
+
+  
+    </div>
+  </ng-template>
+
+
+<ng-template #contentt let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Your Body Shape</h4>
+    </div>
+    <div class="modal-body">
+      <div class="allsize1" ></div>
+      <div class="allsize2"></div>
+      <div class="allsize3"></div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')" style="position: absolute;right: 700px;">Back</button>
+        <button class="btn-primary" (click)="openLg2(contenttt)">Show My Size</button>
+  
+    </div>
+  </ng-template>
+
+<ng-template #content let-modal > 
+
+  <div class="modal-header">
+    <h4 class="modal-title">Your Details</h4>
+    <button class="btn-men"  >Men</button>
+    <button class="btn-women"  >Women</button>
+  </div>
+  <div class="modal-body">
+      <form [formGroup]="formAdd">
+      <div class="form-group   col-md-2" >
+              <div class="img-body"></div>
+            <label for="sel1" style="position: absolute;top: 90px;left:183px;" > Height:</label>
+            <select class="form-control" id="height" formControlName="height"  style="position: absolute;top: 120px;left: 184px;">
+              <option value="168">168cm</option>
+              <option value="178">178cm</option>
+              <option value="180">188cm</option>
+              <option value="198">198cm</option>
+
+            </select>
+            <br>
+            
+          </div>
+
+    <div class="form-group col-md-2">
+        <div class="img-weight"></div>
+        <div class="input-group"> 
+      <label for="sel1" style="position: absolute;bottom: 205px;left:550px;" > Weight:</label>
+      <select class="form-control" id="weight" formControlName="weight" style="position: absolute;bottom: 170px;left: 550px;width: 140px;">
+        <option value="50">50kg</option>
+        <option value="60">60kg</option>
+        <option value="70">70kg</option>
+        <option value="80">80kg</option>
+        <option value="90">90kg</option>
+      </select>
+      </div>
+      <br>
+    </div>
+    <div class="form-group col-md-2">
+        <div class="img-age"></div>
+      <label for="sel1" style="position: absolute;top: 90px;left:183px;" > age:</label>
+      <select class="form-control" id="age" formControlName="age"  style="position: absolute;top: 120px;left: 184px;">
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+      </select>
+      <br>
+    </div>
+
+      </form>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn-primary" (click)="openLg1(contentt)">Next </button>
+
+  </div>
+</ng-template>
+
+
+<div class="page">
+<div class="center">
+    <div class=img> </div>
+    
+    <div class=text>Product code: <input type="input"  >
+                    Language :<input type="input">
+     <br>
+     <button class="btn-primary" (click)="openLg(content)">Show My Size</button>
+
+
+    </div>
+    
+  </div>
+</div>
+ 
+ 
